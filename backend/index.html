@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word DOCX to PDF Converter in Node.js & Express</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: math;
+        }
+        nav{
+            background-color: #0e1823;
+            color: white;
+            padding: 1rem 2rem;
+        }
+        nav h1{
+            color: #d2ae6d;
+            font-size: 1.7rem;
+            font-family: math;
+        }
+        main{
+            text-align: center;
+            margin-top: 1rem;
+        }
+        main >p{
+            font-size: 1.7rem;
+        }
+        #submit{
+            font-size: 1rem;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    background-color: #e5322d;
+    color: white;
+    width: 100%;
+    border-radius: 0.2rem;
+    background: white;
+    color: black;
+        }
+        label p{
+            font-size: 1rem;
+           background-color: #e5322d;
+           color: white;
+           width: 100%;
+           cursor: pointer;
+           border-radius: 0.2rem;
+           padding: 0.6rem 1rem;
+           text-align: center;
+        }
+        label p:hover, #submit:hover{
+            background-color: #0e1823;
+            color: white;
+        }
+        form{
+            width: 16%;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>MyConverter</h1>
+    </nav>
+    <main>
+        <h1>Pdf to word converter</h1>
+        <p >Convert your PDF to WORD documents with incredible accuracy.</p>
+        <form action="/docxtopdf" method="post"
+        enctype="multipart/form-data"
+        >
+            <input  accept=".docx" name="file" style='display:none;' id="files" type='file' />
+              <label for="files">
+                <p >
+                  Select pdf file
+                </p>
+              </label>
+            <input id="submit" type="submit" value="Download PDF File">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.container a{
+    color:white;
+    text-decoration:1.2px underline transparent;
+}
+.container a:hover{
+    color:white;
+    text-decoration:1.2px underline white;
+}

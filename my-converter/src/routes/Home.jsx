@@ -32,9 +32,8 @@ const Home = () => {
         'Content-Length': `${wordFile.size}`, // 👈 Headers need to be a string
       },
     }).then((res)=>{
-      console.log(res,'error occurs brother');
+      console.log(res);
     }).catch((err)=>console.log(err.message))
-
   }
 
   return (
